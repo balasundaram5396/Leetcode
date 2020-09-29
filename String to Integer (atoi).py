@@ -18,20 +18,20 @@ class Solution:
         str=str.strip()
         if not str:
             return 0
-        
+
         val=0
         neg=False
-        
+
         if str[0] =="-":
             neg=True
-        
-        
+
+
         elif str[0]=="+":
             neg=False
-            
+
         elif not str[0].isnumeric():
             return 0
-            
+
         else:
             val=ord(str[0])-ord("0")
         for i in range(1,len(str)):
@@ -47,3 +47,7 @@ class Solution:
             return val
         else:
             return -val
+
+
+
+#Method: Use ord() to get ascii value of characters and strip function to eliminate whitespaces in the start and the end
